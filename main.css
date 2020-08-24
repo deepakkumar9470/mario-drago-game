@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: skyblue;
+    color: #fff;
+    overflow: hidden;
+}
+
+.gamecontainer{
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+#scoreCont{
+    width: 145px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 3px gray;
+    position: relative;
+    left: 53px;
+    top: 23px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.gameOver{
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 4px 4px 5px gray;
+    position: relative;
+    top: 20px;
+    font-family: 'Saira', sans-serif;
+}   
+
+.mymario{
+ background-image: url('images/mario-small.png'); 
+ background-repeat: no-repeat;
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    bottom: 0;
+    left: 52px;
+}
+.obstacle{
+    width: 156px;
+    height: 103px;
+    background-image: url('images/dragon.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 44vw;
+}
+.obstacleAni{
+    animation: obstacleAni 5s linear infinite;
+}
+@keyframes obstacleAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+
+.animateMario{
+    animation: marioani 0.6s linear;
+}
+
+
+@keyframes marioani{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 422px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+
+
